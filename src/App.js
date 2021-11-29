@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Layout from './layout/Layout';
 
 function App() {
   return (
     <div>
-      <p>hello world!!</p>
+      <Layout />
     </div>
   );
 }
