@@ -1,7 +1,8 @@
 import React from 'react'
-import AppBarSample from '../components/UI/AppBarSample'
+import AppBarSample from './AppBarSample'
 import Box from '@mui/material/Box'
-import FooterSample from '../components/UI/FooterSample'
+import FooterSample from './FooterSample'
+import SectionSample from './SectionSample'
 
 function Layout() {
     return (
@@ -10,7 +11,9 @@ function Layout() {
             <AppBarSample />
 
             {/* content */}
-            <Box sx={{ height: '50vh'}}>Content</Box>
+            <Box sx={(theme)=>({ height: '100vh',backgroundColor: theme.palette.success.main})}>
+                <SectionSample />
+            </Box>
 
             {/* footer */}
             <FooterSample />
